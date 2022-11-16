@@ -3,7 +3,8 @@ import { Button, View, ScrollView, StyleSheet, Text, Image, ImageBackground } fr
 import Constants from 'expo-constants';
 import { useState } from "react";
 
-const Layout = () => {
+const Layout = (props) => {
+  const {navigation} = props;
 
   const flexDirectionsArray = ['row', 'row-reverse', 'column', 'column-reverse'];
   const justifyContents = [
@@ -92,6 +93,10 @@ const Layout = () => {
         <View style={[styles.buttonView]}>
           <Button title="DELETE SQUARE" 
             onPress={() => setSquares(squares.filter((v,i) => i != squares.length - 1))}/>
+        </View>
+        <View style={[styles.buttonView]}>
+          <Button title="GO TO HOME" 
+            onPress={() => navigation.navigate('Home')}/>
         </View>
       </View>
       
