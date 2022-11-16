@@ -14,11 +14,6 @@ function Home({navigation}) {
             >
                 <Text style={styles.buttonTest}>Go To Layout</Text>
             </TouchableOpacity>
-
-            <Button
-                title = "Go to Layout"
-                onPress={() => navigation.navigate('Layout')}
-            />
         </View>
 
     );
