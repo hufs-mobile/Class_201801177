@@ -1,12 +1,12 @@
 import React from "react";
-import {Image, Text, Button, View, StyleSheet, TouchavleOpacity, TouchableOpacity} from 'react-native';
+import {Image, Text, Button, View, StyleSheet, TouchableOpacity} from 'react-native';
 
 function Home({navigation}) {
     return (
         <View style={styles.container}>
-            <Image
+            <Image 
                 source={require('../assets/frog-1371919.png')}
-                style={{width:400,height:400}}
+                style={{width:400,height:400}}    
             />
             <TouchableOpacity
                 style={styles.buttoneContainer}
@@ -31,10 +31,12 @@ const styles = StyleSheet.create({
         borderRadius:5,
         padding:10,
         margin:20
+
     },
     buttonTest:{
         fontSize:20,
         color:'#fff'
+
     }
 })
 
