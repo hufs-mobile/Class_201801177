@@ -1,0 +1,44 @@
+{
+    "base": "stations",
+    "clouds": {
+      "all": 15
+    },
+    "cod": 200,
+    "coord": {
+      "lat": 37.3396,
+      "lon": 127.2748
+    },
+    "dt": 1669769518,
+    "id": 1845275,
+    "main": {
+      "feels_like": 260.07,
+      "grnd_level": 1004,
+      "humidity": 27,
+      "pressure": 1033,
+      "sea_level": 1033,
+      "temp": 267.07,
+      "temp_max": 267.07,
+      "temp_min": 267.07
+    },
+    "name": "Chuja-ri",
+    "sys": {
+      "country": "KR",
+      "sunrise": 1669760707,
+      "sunset": 1669796043
+    },
+    "timezone": 32400,
+    "visibility": 10000,
+    "weather": [
+      {
+        "description": "few clouds",
+        "icon": "02d",
+        "id": 801,
+        "main": "Clouds"
+      }
+    ],
+    "wind": {
+      "deg": 322,
+      "gust": 10.06,
+      "speed": 6.23
+    }
+  }

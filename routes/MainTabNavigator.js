@@ -16,6 +16,7 @@ function MainTabNavigator() {
                 <Nav.Screen name = "Home" component={Home} options={{title: '추가 Home'}}/>
                 <Nav.Screen name = "Weather" component={Weather} options={{title: '날씨조회화면'}}/>
 
+
             </Nav.Navigator>
         </NavigationContainer>
     );
