@@ -33,10 +33,10 @@ export default class Weather extends React.Component {
             console.log("icon : " + data.weather[0].icon);
 
             this.setState({
-                cond : data.weather[0].main,
-                temp : data.main.temp,
-                icon : data.weather[0].icon
-            });
+                    cond : data.weather[0].main, 
+                    temp : data.main.temp,
+                    icon : data.weather[0].icon
+                });
         } catch(error) {
             Alert.alert("Error", error.message)
         }
@@ -69,11 +69,11 @@ export default class Weather extends React.Component {
 
         return (
             <View style={[styles.container]}>
-                <View style={[styles.container]}>
-                    <MaterialCommunityIcons name={weatherOptions[cond].iconName} size={128} colors="black" />
+                <View style={[styles.halfcontainer]}>
+                    <MaterialCommunityIcons name={weatherOptions[cond].iconName} size={128} color="black" />
                     <Text style={[styles.temptitle]}> {temp} </Text>
                 </View>
-
+                
             </View>
         );
         
@@ -84,10 +84,10 @@ export default class Weather extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent : "center",
-        alignItems: "center",
+        justifyContent: "center",
+        alignItems: "center"
     },
-    halftainer: {
+    halfcontainer: {
         flex: 1,
         justifyContent : "center",
         alignItems: "center",
